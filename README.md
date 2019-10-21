@@ -1,83 +1,23 @@
-# Getting Started with Less
+# Getting Started with Sass and Koala
+There are a number of different ways to use Sass. In this practical we will use Koala as it is an easy way to get up and running with Sass.
 
 ## Setting up
-* Create a new folder
-* Create a new HTML document e.g.
-```html
-<!DOCTYPE html>
-<html>
-<html lang="en">
-    <title>Getting started with Less</title>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-<h1>This is a heading</h1>
-<p>This is a paragraph</p>
-</body>
-</html>
-```
-* Name it *index.html*
-* Create a new folder, name it *css*
-* Create a *css* file, name it *style.css* e.g.
-```css
-body{
-    color:#54869E;
-}
-```
-Link the HTML to the CSS.
-Test the page in a browser. 
+* Download the repository
+  * Open *index.html* and *style.scss* in a text editor
+* Open the web page in a browser. Note that at the moment it doesn't have any CSS applied to it.
+* Open Koala
+* Drag the folder that contains the web page and scss folder into Koala
+* Koala should automatically detect the style.scss file
+* Right click on the style.scss and select compile
+* Koala should have generated a CSS file for you based on the Sass file. Check you can find this generated CSS files.
+* Refresh *index.html* in a browser it should now have some CSS applied.
+* The basic workflow is to make changes to style.scss. Koala will then compile this for us into plain CSS . We can then refresh the browser to see the changes.
 
-## Using Less
-* Navigate to this folder using the (NodeJS) Command Prompt
-* You might need to set the proxy e.g.
-```
-npm config set proxy http://wwwproxy.hud.ac.uk:3128
-```
+## Re-write the CSS using Sass
+1. Use Sass variables instead of hard coded font and colour names.
+2. Put your variables in a separate *_vars.scss* partial file. Use an *import* to load them into *style.scss*.
+  * Recently Sass have made their use of partials much more sophisticated to use *modules*.
+  * This won't work when using Koala at university as it is running on an older version of Sass. We have to use the *import* feature https://sass-lang.com/documentation/at-rules/import
+3. Experiment with using mixins, extends and placeholders. You should be able to re-use CSS rules and reduce the number of classes used in the HTML page. Try and make your CSS efficient and easy to maintain.
 
-* Enter the following to install the Less Nodejs package:
-```
-npm install -g less
-```
-* Create a new file in the css folder, *style.less*. Add the following code:
-```
-@muted-blue:#54869E;
-body{
-    color:@muted-blue;
-}
-h1{
-    padding:10px;
-    border:1px solid @muted-blue;
-}
-```
-Back in the Command Prompt enter the following 
-```
-lessc css/style.less css/style.css
-```
-* *lessc* stands for less compile, we then need to specify the less file (*style.less*) and the output file (*style.css*).
-* Refresh the page in a browser
-* Have a look at *style.css* and note the changes
-
-
-## Watching Less Files
-Constantly have to re-compile your less files every time you make a change can be tedious. An alternative is to watch the files and compile them automatically. Again we'll use a Nodejs package to do this, one called *autoless* (https://www.npmjs.com/package/autoless). Try the following:
-* In the Command Prompt enter:
-```
-npm install -g autoless
-```
-To start watching the less files enter
-```
-autoless css
-```
-* Note the output in the Command Prompt window
-* Make a change to your *style.less* file
-* Save it
-* Note the automatic change in style.css. 
-* Refresh the browser to check the changes have taken effect
-* To stop watching for changes enter Ctrl+c in the Command Prompt.
-
-## On Your Own
-Have a look at http://lesscss.org/#overview for an overview of less functions. Experiment with the examples and try to get a feel for what a CSS pre-processor can do for you e.g. mixins, imports etc. 
-
-
-
+The following link should explain the basics of Sass - https://sass-lang.com/guide.

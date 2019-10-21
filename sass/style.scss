@@ -1,0 +1,46 @@
+h1,h2,h3{
+  font-family:Arial;
+}
+
+a{
+    color:red;
+    text-decoration:none;
+}
+
+.border{
+  border-radius:10px;
+  border:1px solid;
+}
+
+.news-item{
+    margin:10px;
+    width:75%;
+    padding:20px;
+}
+
+.news-item-left{
+  float:left;
+}
+
+.news-item-right{
+  float:right;
+}
+.contrast-link{
+  color:white;
+}
+.content-block{
+  padding:20px;
+  border-radius:10px;
+  margin:10px;
+}
+
+.contrast-block{
+    background-color:red;
+}
+
+.header{
+    text-align:center;
+}
+.main-content{
+    overflow:auto;
+}
