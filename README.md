@@ -28,8 +28,8 @@ Now experiment with the basic feature of Sass. Try the following:
 The following link explains the basics of Sass - https://sass-lang.com/guide.
 
 ## CSS Libraries and Fraemworks
-* Have a look on the lecture slides. Find a library e.g. Animate.css you might want to use for your assignment.
+* Have a look on the lecture slides. Find a library (e.g. Animate.css) you might want to use for your assignment.
 * See if you can create a simple example that uses the library.
 * Next pick a framework e.g. Bootstrap. Again, see if you can create a simple example that uses the framework.
 * Compare the two approaches libraries vs frameworks.
-* How easy do you think it will be to customise the library/framework to create a unique design for a website. 
+* How easy do you think it will be to create a unique design for a website if you use the library/framework. 
