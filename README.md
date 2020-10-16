@@ -2,7 +2,7 @@
 
 There are a number of options here. If you are familiar with using command line tools and Node.js there is Node.js implementation of Sass see https://sass-lang.com/install.
 
-Alternatively you can use an application with a graphical user interface to compile Sass code. There are several different applications out there. The instructions below describe the use of Koala, it's free and easy to use. 
+Alternatively you can use an application with a graphical user interface to compile Sass code. There are several different applications out there. The instructions below describe the use of Koala, it's free and easy to use.
 
 ## Getting Started with Sass and Koala
 
@@ -29,7 +29,7 @@ Now experiment with the basic feature of Sass. Try the following:
 
 The following link explains the basics of Sass - https://sass-lang.com/guide.
 
-## CSS Libraries and Fraemworks
+## CSS Libraries and Frameworks
 * Have a look on the lecture slides. Find a library (e.g. Animate.css) you might want to use for your assignment.
 * See if you can create a simple example that uses the library.
 * Next pick a framework e.g. Bootstrap. Again, see if you can create a simple example that uses the framework.
