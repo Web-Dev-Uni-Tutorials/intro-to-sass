@@ -44,5 +44,4 @@ sass --watch sass/style.scss css/style.css
 ```
 * This will look for a Sass file in a folder called *sass*, compile it and output it to a *css* folder. You might have to modify the above code for your file names, but if you've previously done the Koala Sass practical the naming should be the same.
 * Make changes to your Sass file. You should get some feedback through the Command Prompt and *style.css* should update.
-* Previously we used Koala. One limitation of Koala is that is doesn't use the most up to date version of Sass e.g. we had to use *@import* to combine multiple stylesheets. Have a look at the *@use* rule (https://sass-lang.com/documentation/at-rules/use) which is a better way of doing the same thing. Modify your Sass code to use *@use*.
 * Once you've finished, in the Command Prompt enter *ctrl+c* to stop watching the Sass code.
