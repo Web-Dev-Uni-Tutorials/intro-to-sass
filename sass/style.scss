@@ -1,5 +1,7 @@
+$heading-font: Arial;
+
 h1,h2,h3{
-  font-family:Arial;
+  font-family:$heading-font;
 }
 a{
   color:red;
