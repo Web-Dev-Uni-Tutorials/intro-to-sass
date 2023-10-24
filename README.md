@@ -18,9 +18,9 @@ There are a number of options for compiling Sass code. We can use a GUI such as 
 Now experiment with the basic feature of Sass. Don't change the design, simply try and re-write the CSS using Sass (and the HTML) to make it more efficient.  The following link explains the basics of Sass - https://sass-lang.com/guide. Try the following:
 1. Use Sass variables instead of hard coded font and colour names.
 2. Can you use nesting e.g. to style the hyperlinks in the header and footer differently. Then you will no longer need the ```.contrast-link``` class.
-3. Can you use ```extend``` e.g. you could extend ```content-block``` and use it in the header, footer etc. 
+3. Can you use inheritance e.g. you could ```extend``` ```content-block``` and use it in the header, footer etc. See https://sass-lang.com/guide/#inheritance.
 4. A new design requirements comes in, the news items also need rounded corners on their border, but their corners need to have a 5px radius. Can you use a mixin to generate the rounded border for both the main content areas (header, footer etc.) and the news items. 
-5. Put your variables in a separate *_vars.scss* partial file. Use an *import* to load them into *style.scss*. see https://sass-lang.com/documentation/at-rules/import . Import is being phased out but, the newer methods don't work in Koala.
+5. Put your variables in a separate *_vars.scss* partial file. Use an *import* to load them into *style.scss*. See https://sass-lang.com/documentation/at-rules/import. Import is being phased out but, the newer methods don't work in Koala.
 
 ## Using Sass with Node.js
 If you aren't familiar with using command line tools, have a look at [Intro to the Command Prompt](intro-to-command-prompt.md) which explains the basics.
